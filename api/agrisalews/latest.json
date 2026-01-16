@@ -1,0 +1,42 @@
+{
+  "name": "AgrisaleWS",
+  "version": "1.5.2",
+  "releaseDate": "2026-01-15",
+  "description": "云端版农资销售管理系统",
+  "changelog": {
+    "ui": [
+      "产品编辑对话框优化：改进同时修改产品名称和供应商时的对话框提示信息",
+      "SnackBar 提示信息优化：根据实际修改情况显示更精确的成功提示"
+    ]
+  },
+  "downloads": {
+    "android": {
+      "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-android-v1.5.2.apk",
+      "filename": "AgrisaleWS-android-v1.5.2.apk"
+    },
+    "ios": {
+      "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-ios-v1.5.2.ipa",
+      "filename": "AgrisaleWS-ios-v1.5.2.ipa"
+    },
+    "macos": {
+      "dmg": {
+        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.dmg",
+        "filename": "AgrisaleWS-macos-v1.5.2.dmg"
+      },
+      "zip": {
+        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.zip",
+        "filename": "AgrisaleWS-macos-v1.5.2.zip"
+      }
+    },
+    "windows": {
+      "installer": {
+        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2-installer.exe",
+        "filename": "AgrisaleWS-windows-v1.5.2-installer.exe"
+      },
+      "zip": {
+        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2.zip",
+        "filename": "AgrisaleWS-windows-v1.5.2.zip"
+      }
+    }
+  }
+}
