@@ -1,42 +1,30 @@
 {
-  "name": "AgrisaleWS",
-  "version": "1.5.2",
-  "releaseDate": "2026-01-15",
-  "description": "云端版农资销售管理系统",
-  "changelog": {
-    "ui": [
-      "产品编辑对话框优化：改进同时修改产品名称和供应商时的对话框提示信息",
-      "SnackBar 提示信息优化：根据实际修改情况显示更精确的成功提示"
-    ]
-  },
-  "downloads": {
-    "android": {
-      "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-android-v1.5.2.apk",
-      "filename": "AgrisaleWS-android-v1.5.2.apk"
+  "tag_name": "v1.5.2",
+  "body": "### v1.5.2 更新内容 🚀\n\n#### 🎨 UI 改进\n- **产品编辑对话框优化**：改进同时修改产品名称和供应商时的对话框提示信息，当产品名称也将被修改时，对话框会明确告知用户，添加\"产品名称修改将自动同步到所有相关记录\"的提示说明，优化对话框内容展示，提升用户体验\n- **SnackBar 提示信息优化**：根据实际修改情况显示更精确的成功提示，只修改名称显示\"产品已更新，名称已同步到相关记录\"，只修改供应商（并同步）显示\"产品已更新，供应商已同步到采购记录\"，同时修改名称和供应商（并同步）显示\"产品已更新，名称和供应商已同步到相关记录\"，让用户更清楚地了解操作结果",
+  "assets": [
+    {
+      "name": "AgrisaleWS-android-v1.5.2.apk",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-android-v1.5.2.apk"
     },
-    "ios": {
-      "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-ios-v1.5.2.ipa",
-      "filename": "AgrisaleWS-ios-v1.5.2.ipa"
+    {
+      "name": "AgrisaleWS-ios-v1.5.2.ipa",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-ios-v1.5.2.ipa"
     },
-    "macos": {
-      "dmg": {
-        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.dmg",
-        "filename": "AgrisaleWS-macos-v1.5.2.dmg"
-      },
-      "zip": {
-        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.zip",
-        "filename": "AgrisaleWS-macos-v1.5.2.zip"
-      }
+    {
+      "name": "AgrisaleWS-macos-v1.5.2.dmg",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.dmg"
     },
-    "windows": {
-      "installer": {
-        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2-installer.exe",
-        "filename": "AgrisaleWS-windows-v1.5.2-installer.exe"
-      },
-      "zip": {
-        "url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2.zip",
-        "filename": "AgrisaleWS-windows-v1.5.2.zip"
-      }
+    {
+      "name": "AgrisaleWS-macos-v1.5.2.zip",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.zip"
+    },
+    {
+      "name": "AgrisaleWS-windows-v1.5.2-installer.exe",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2-installer.exe"
+    },
+    {
+      "name": "AgrisaleWS-windows-v1.5.2.zip",
+      "browser_download_url": "https://releases.drflo.org/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2.zip"
     }
-  }
+  ]
 }
