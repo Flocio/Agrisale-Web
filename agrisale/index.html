@@ -11,8 +11,8 @@
       // 自动检测并修复路径（兼容 GitHub Pages 和 Cloudflare Pages）
       (function() {
         const pathname = window.location.pathname;
-        const isGitHubPages = pathname.includes('/Agrisale_Web/') || pathname.startsWith('/Agrisale_Web');
-        const basePath = isGitHubPages ? '/Agrisale_Web' : '';
+        const isGitHubPages = pathname.includes('/Agrisale-Web/') || pathname.startsWith('/Agrisale-Web');
+        const basePath = isGitHubPages ? '/Agrisale-Web' : '';
         
         function fixLink(link) {
           const href = link.getAttribute('href');
