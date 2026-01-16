@@ -10,21 +10,53 @@
     <script>
       // 自动检测并修复路径（兼容 GitHub Pages 和 Cloudflare Pages）
       (function() {
-        const basePath = window.location.pathname.includes('/Agrisale_Web/') 
-          ? '/Agrisale_Web' 
-          : '';
+        const pathname = window.location.pathname;
+        const isGitHubPages = pathname.includes('/Agrisale_Web/') || pathname.startsWith('/Agrisale_Web');
+        const basePath = isGitHubPages ? '/Agrisale_Web' : '';
         
-        document.addEventListener('DOMContentLoaded', function() {
+        function fixLink(link) {
+          const href = link.getAttribute('href');
+          if (href && href.startsWith('/') && basePath) {
+            const newHref = href === '/' ? basePath + '/' : basePath + href;
+            link.setAttribute('href', newHref);
+          }
+        }
+        
+        function fixAllLinks() {
           const links = document.querySelectorAll('a[href^="/"]');
-          links.forEach(link => {
+          links.forEach(fixLink);
+        }
+        
+        // 拦截点击事件
+        document.addEventListener('click', function(e) {
+          const link = e.target.closest('a[href^="/"]');
+          if (link && basePath) {
             const href = link.getAttribute('href');
-            if (href && href !== '/' && basePath) {
-              link.setAttribute('href', basePath + href);
-            } else if (href === '/' && basePath) {
-              link.setAttribute('href', basePath + '/');
+            if (href && href.startsWith('/')) {
+              e.preventDefault();
+              const newHref = href === '/' ? basePath + '/' : basePath + href;
+              window.location.href = newHref;
             }
+          }
+        }, true);
+        
+        // 修复所有链接
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', fixAllLinks);
+        } else {
+          fixAllLinks();
+        }
+        
+        // 监听动态添加的链接
+        if (document.body) {
+          const observer = new MutationObserver(fixAllLinks);
+          observer.observe(document.body, { childList: true, subtree: true });
+        } else {
+          document.addEventListener('DOMContentLoaded', function() {
+            const observer = new MutationObserver(fixAllLinks);
+            observer.observe(document.body, { childList: true, subtree: true });
           });
-        });
+        }
       })();
     </script>
 </head>
