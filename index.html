@@ -16,46 +16,22 @@
         
         function fixLink(link) {
           const href = link.getAttribute('href');
-          if (href && href.startsWith('/') && basePath) {
+          // 只处理以 / 开头但不以 basePath 开头的链接
+          if (href && href.startsWith('/') && basePath && !href.startsWith(basePath)) {
             const newHref = href === '/' ? basePath + '/' : basePath + href;
             link.setAttribute('href', newHref);
           }
         }
         
         function fixAllLinks() {
-          const links = document.querySelectorAll('a[href^="/"]');
-          links.forEach(fixLink);
+          document.querySelectorAll('a[href^="/"]').forEach(fixLink);
         }
-        
-        // 拦截点击事件
-        document.addEventListener('click', function(e) {
-          const link = e.target.closest('a[href^="/"]');
-          if (link && basePath) {
-            const href = link.getAttribute('href');
-            if (href && href.startsWith('/')) {
-              e.preventDefault();
-              const newHref = href === '/' ? basePath + '/' : basePath + href;
-              window.location.href = newHref;
-            }
-          }
-        }, true);
         
         // 修复所有链接
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', fixAllLinks);
         } else {
           fixAllLinks();
-        }
-        
-        // 监听动态添加的链接
-        if (document.body) {
-          const observer = new MutationObserver(fixAllLinks);
-          observer.observe(document.body, { childList: true, subtree: true });
-        } else {
-          document.addEventListener('DOMContentLoaded', function() {
-            const observer = new MutationObserver(fixAllLinks);
-            observer.observe(document.body, { childList: true, subtree: true });
-          });
         }
       })();
     </script>
