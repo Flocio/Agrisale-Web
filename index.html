@@ -7,6 +7,26 @@
     <meta name="keywords" content="农资管理,销售管理,库存管理,农资经销商,Agrisale">
     <title>Agrisale 系列 - 农资销售管理系统</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      // 自动检测并修复路径（兼容 GitHub Pages 和 Cloudflare Pages）
+      (function() {
+        const basePath = window.location.pathname.includes('/Agrisale_Web/') 
+          ? '/Agrisale_Web' 
+          : '';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          const links = document.querySelectorAll('a[href^="/"]');
+          links.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href && href !== '/' && basePath) {
+              link.setAttribute('href', basePath + href);
+            } else if (href === '/' && basePath) {
+              link.setAttribute('href', basePath + '/');
+            }
+          });
+        });
+      })();
+    </script>
 </head>
 <body>
     <div class="container">
