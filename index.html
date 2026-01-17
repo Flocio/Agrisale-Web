@@ -7,6 +7,34 @@
     <meta name="keywords" content="农资管理,销售管理,库存管理,农资经销商,Agrisale">
     <title>Agrisale 系列 - 农资销售管理系统</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      // 自动检测并修复路径（兼容 GitHub Pages 和 Cloudflare Pages）
+      (function() {
+        const pathname = window.location.pathname;
+        const isGitHubPages = pathname.includes('/Agrisale-Web/') || pathname.startsWith('/Agrisale-Web');
+        const basePath = isGitHubPages ? '/Agrisale-Web' : '';
+        
+        function fixLink(link) {
+          const href = link.getAttribute('href');
+          // 只处理以 / 开头但不以 basePath 开头的链接
+          if (href && href.startsWith('/') && basePath && !href.startsWith(basePath)) {
+            const newHref = href === '/' ? basePath + '/' : basePath + href;
+            link.setAttribute('href', newHref);
+          }
+        }
+        
+        function fixAllLinks() {
+          document.querySelectorAll('a[href^="/"]').forEach(fixLink);
+        }
+        
+        // 修复所有链接
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', fixAllLinks);
+        } else {
+          fixAllLinks();
+        }
+      })();
+    </script>
 </head>
 <body>
     <div class="container">
@@ -63,7 +91,6 @@
                             <li>✅ 多 Workspace 管理</li>
                             <li>✅ 团队成员协作</li>
                             <li>✅ 跨设备数据同步</li>
-                            <li>✅ AI 智能分析</li>
                         </ul>
                         <a href="/agrisalews/" class="btn btn-cloud">立即下载</a>
                     </div>
