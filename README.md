@@ -20,9 +20,14 @@ Official download website for Agrisale series - agricultural sales management sy
 ## Deployment
 
 - **Website**: Cloudflare Pages (auto-deploy from GitHub)
-- **Downloads**: Cloudflare R2 at `releases.drflo.org`
+- **Downloads**: 123 Yunpan direct links
 
 See [DEPLOY.md](DEPLOY.md) for detailed instructions.
+
+## Links
+
+- **Cloudflare Pages**: https://agrisale.drflo.org
+- **GitHub Pages**: https://flocio.github.io/Agrisale-Web/
 
 ## Update Version
 
