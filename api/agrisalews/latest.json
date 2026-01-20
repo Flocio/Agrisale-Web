@@ -1,30 +1,22 @@
 {
-  "tag_name": "v1.5.2",
-  "body": "### v1.5.2 更新内容 🚀\n\n#### 🎨 UI 改进\n- **产品编辑对话框优化**：改进同时修改产品名称和供应商时的对话框提示信息，当产品名称也将被修改时，对话框会明确告知用户，添加\"产品名称修改将自动同步到所有相关记录\"的提示说明，优化对话框内容展示，提升用户体验\n- **SnackBar 提示信息优化**：根据实际修改情况显示更精确的成功提示，只修改名称显示\"产品已更新，名称已同步到相关记录\"，只修改供应商（并同步）显示\"产品已更新，供应商已同步到采购记录\"，同时修改名称和供应商（并同步）显示\"产品已更新，名称和供应商已同步到相关记录\"，让用户更清楚地了解操作结果",
+  "tag_name": "v1.8.0",
+  "body": "### v1.8.0 更新内容 🚀\n\n#### 🎨 UI 升级\n- **界面风格切换**：支持 Cupertino、Material、Fluent 三种界面风格自由切换\n- **视觉优化**：优化了多个界面的 UI 细节，提升用户体验\n- **账户设置优化**：隐私设置一栏置顶，操作更便捷\n\n#### 🔐 隐私与安全\n- **用户邀请设置**：新增「允许被邀请加入 Workspace」开关，用户可控制是否接受邀请\n- **管理后台安全增强**：标签页关闭/浏览器关闭/无操作 10 分钟自动退出登录\n\n#### 🔧 功能增强\n- **许可证管理**：管理后台支持修改许可证的最大用户数和设备数限制",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v1.5.2.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-android-v1.5.2.apk"
+      "name": "AgrisaleWS-android-v1.8.0.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.0/AgrisaleWS-android-v1.8.0.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v1.5.2.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-ios-v1.5.2.ipa"
+      "name": "AgrisaleWS-ios-v1.8.0.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.0/AgrisaleWS-ios-v1.8.0.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v1.5.2.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.dmg"
+      "name": "AgrisaleWS-macos-v1.8.0.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.0/AgrisaleWS-macos-v1.8.0.dmg"
     },
     {
-      "name": "AgrisaleWS-macos-v1.5.2.zip",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-macos-v1.5.2.zip"
-    },
-    {
-      "name": "AgrisaleWS-windows-v1.5.2-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2-installer.exe"
-    },
-    {
-      "name": "AgrisaleWS-windows-v1.5.2.zip",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.5.2/AgrisaleWS-windows-v1.5.2.zip"
+      "name": "AgrisaleWS-windows-v1.8.0-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.0/AgrisaleWS-windows-v1.8.0-installer.exe"
     }
   ]
 }
