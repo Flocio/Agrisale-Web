@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agrisale 隐私政策 - 了解我们如何收集、使用和保护您的数据">
+    <meta name="keywords" content="隐私政策,数据保护,Agrisale,AgrisaleWS">
+    <title>隐私政策 - Agrisale</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+      // 自动检测并修复路径（兼容 GitHub Pages 和 Cloudflare Pages）
+      (function() {
+        const pathname = window.location.pathname;
+        const isGitHubPages = pathname.includes('/Agrisale-Web/') || pathname.startsWith('/Agrisale-Web');
+        const basePath = isGitHubPages ? '/Agrisale-Web' : '';
+        
+        function fixLink(link) {
+          const href = link.getAttribute('href');
+          // 只处理以 / 开头但不以 basePath 开头的链接
+          if (href && href.startsWith('/') && basePath && !href.startsWith(basePath)) {
+            const newHref = href === '/' ? basePath + '/' : basePath + href;
+            link.setAttribute('href', newHref);
+          }
+        }
+        
+        function fixAllLinks() {
+          document.querySelectorAll('a[href^="/"]').forEach(fixLink);
+        }
+        
+        // 修复所有链接
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', fixAllLinks);
+        } else {
+          fixAllLinks();
+        }
+      })();
+    </script>
+    <style>
+        /* 隐私政策页面专用样式 */
+        .privacy-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .privacy-content h2 {
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .privacy-content h3 {
+            color: var(--text-primary);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .privacy-content p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+        
+        .privacy-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .privacy-content li {
+            line-height: 1.8;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+        
+        .privacy-content li strong {
+            color: var(--text-primary);
+        }
+        
+        .update-date {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .lang-btn {
+            padding: 10px 25px;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            background: transparent;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .lang-btn.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-color: transparent;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(123, 97, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+        
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+        
+        .version-note {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .version-card {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            border-radius: 15px;
+            background: var(--card-bg);
+        }
+        
+        .version-card.local {
+            border: 2px solid #10b981;
+        }
+        
+        .version-card.cloud {
+            border: 2px solid #8b5cf6;
+        }
+        
+        .version-card h4 {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .version-card.local h4 {
+            color: #10b981;
+        }
+        
+        .version-card.cloud h4 {
+            color: #8b5cf6;
+        }
+        
+        .version-card ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .contact-info {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .toc {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .toc ol {
+            margin: 0;
+            padding-left: 25px;
+        }
+        
+        .toc li {
+            margin-bottom: 8px;
+        }
+        
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <a href="/" class="back-link">← 返回首页</a>
+            <h1>🔒 隐私政策</h1>
+            <p class="subtitle">Privacy Policy</p>
+            <p>了解我们如何保护您的数据安全</p>
+            
+            <nav class="nav">
+                <a href="/" class="nav-link">🏠 首页</a>
+                <a href="/agrisale/" class="nav-link">📦 本地版</a>
+                <a href="/agrisalews/" class="nav-link">☁️ 云端版</a>
+                <a href="/privacy/" class="nav-link active">🔒 隐私政策</a>
+            </nav>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="privacy-content">
+                <!-- 语言切换 -->
+                <div class="lang-switch">
+                    <button class="lang-btn active" onclick="switchLang('zh')">🇨🇳 中文</button>
+                    <button class="lang-btn" onclick="switchLang('en')">🇺🇸 English</button>
+                </div>
+                
+                <!-- 中文版 -->
+                <div id="zh-content" class="lang-content active">
+                    <div class="update-date">📅 最后更新日期：2026年1月23日</div>
+                    
+                    <p>欢迎使用 <strong>Agrisale</strong> / <strong>AgrisaleWS</strong>（以下统称"本应用"）。我们非常重视您的隐私保护。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的信息。</p>
+                    
+                    <!-- 目录 -->
+                    <div class="toc">
+                        <h3>📑 目录</h3>
+                        <ol>
+                            <li><a href="#zh-1">信息收集</a></li>
+                            <li><a href="#zh-2">信息使用</a></li>
+                            <li><a href="#zh-3">信息共享</a></li>
+                            <li><a href="#zh-4">数据安全</a></li>
+                            <li><a href="#zh-5">数据控制</a></li>
+                            <li><a href="#zh-6">儿童隐私</a></li>
+                            <li><a href="#zh-7">隐私政策变更</a></li>
+                            <li><a href="#zh-8">联系我们</a></li>
+                        </ol>
+                    </div>
+                    
+                    <!-- 版本差异说明 -->
+                    <div class="version-note">
+                        <div class="version-card local">
+                            <h4>📦 Agrisale 本地版</h4>
+                            <ul>
+                                <li>所有数据<strong>完全本地存储</strong></li>
+                                <li>不连接任何云服务器</li>
+                                <li>数据不会离开您的设备</li>
+                            </ul>
+                        </div>
+                        <div class="version-card cloud">
+                            <h4>☁️ AgrisaleWS 云端版</h4>
+                            <ul>
+                                <li>支持本地和云端双存储</li>
+                                <li>云端 Workspace 数据同步至服务器</li>
+                                <li>本地 Workspace 数据仅存储在设备</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h2 id="zh-1">1. 信息收集</h2>
+                    
+                    <h3>1.1 本地存储数据</h3>
+                    <p>本应用的业务数据（包括但不限于产品、客户、供应商、采购、销售、退货、进账、汇款等记录）默认<strong>存储在您的设备本地</strong>。</p>
+                    <p>本地存储的数据包括：</p>
+                    <ul>
+                        <li>用户账号信息（用户名、密码）</li>
+                        <li>产品库存信息</li>
+                        <li>客户和供应商信息</li>
+                        <li>交易记录（采购、销售、退货、进账、汇款）</li>
+                        <li>报表数据</li>
+                        <li>应用设置和偏好</li>
+                    </ul>
+                    
+                    <h3>1.2 云端存储数据（仅限 AgrisaleWS）</h3>
+                    <p>如果您使用 AgrisaleWS 的云端 Workspace 功能，以下数据将同步至云端服务器：</p>
+                    <ul>
+                        <li>云端 Workspace 的所有业务数据</li>
+                        <li>团队成员信息和权限设置</li>
+                        <li>协作相关的操作日志</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <strong>💡 提示：</strong>您可以自由选择使用本地 Workspace 或云端 Workspace。本地 Workspace 的数据永远不会上传到云端。
+                    </div>
+                    
+                    <h3>1.3 网络请求数据</h3>
+                    <p>本应用在以下情况下可能会进行网络请求：</p>
+                    
+                    <p><strong>a) 版本更新检查</strong></p>
+                    <ul>
+                        <li><strong>目的：</strong>检查应用是否有新版本可用</li>
+                        <li><strong>数据：</strong>仅发送当前应用版本号</li>
+                        <li><strong>服务器：</strong>应用官网、GitHub</li>
+                    </ul>
+                    
+                    <p><strong>b) AI 数据分析功能（可选）</strong></p>
+                    <ul>
+                        <li><strong>目的：</strong>为您提供智能数据分析服务</li>
+                        <li><strong>数据：</strong>您主动发送给 AI 的查询内容和相关业务数据</li>
+                        <li><strong>说明：</strong>此功能需要您自行配置 API 密钥，数据将发送至您选择的 AI 服务提供商（如 OpenAI、DeepSeek 等）</li>
+                        <li><strong>注意：</strong>请勿在 AI 查询中包含敏感的个人身份信息</li>
+                    </ul>
+                    
+                    <p><strong>c) 云端同步（仅限 AgrisaleWS）</strong></p>
+                    <ul>
+                        <li><strong>目的：</strong>实现多设备数据同步和团队协作</li>
+                        <li><strong>数据：</strong>云端 Workspace 的业务数据</li>
+                        <li><strong>服务器：</strong>AgrisaleWS 云服务器</li>
+                    </ul>
+                    
+                    <h2 id="zh-2">2. 信息使用</h2>
+                    <p>我们收集的信息仅用于：</p>
+                    <ul>
+                        <li>为您提供应用的核心功能服务</li>
+                        <li>检查应用更新</li>
+                        <li>改进应用性能和用户体验</li>
+                        <li>实现云端数据同步和团队协作（仅限 AgrisaleWS）</li>
+                    </ul>
+                    
+                    <h2 id="zh-3">3. 信息共享</h2>
+                    <p>我们<strong>不会</strong>将您的个人信息或业务数据出售、交易或以其他方式转让给第三方，除非：</p>
+                    <ul>
+                        <li>获得您的明确同意</li>
+                        <li>法律法规要求</li>
+                        <li>您选择使用第三方 AI 服务时，相关查询数据将发送至该服务提供商</li>
+                    </ul>
+                    
+                    <h2 id="zh-4">4. 数据安全</h2>
+                    <p>我们采取以下措施保护您的数据安全：</p>
+                    <ul>
+                        <li>本地 Workspace 数据完全存储在设备本地，不经过网络传输</li>
+                        <li>用户密码在本地加密存储</li>
+                        <li>云端数据传输使用 HTTPS 加密</li>
+                        <li>支持数据备份和恢复功能</li>
+                    </ul>
+                    
+                    <h2 id="zh-5">5. 数据控制</h2>
+                    <p>您对自己的数据拥有完全的控制权：</p>
+                    <ul>
+                        <li><strong>查看：</strong>您可以随时查看应用中存储的所有数据</li>
+                        <li><strong>导出：</strong>您可以将数据导出为 CSV 或 PDF 格式</li>
+                        <li><strong>备份：</strong>您可以随时创建数据备份</li>
+                        <li><strong>删除：</strong>您可以删除任何数据或卸载应用以删除所有本地数据</li>
+                        <li><strong>云端数据删除：</strong>您可以通过应用删除云端 Workspace 及其所有数据</li>
+                    </ul>
+                    
+                    <h2 id="zh-6">6. 儿童隐私</h2>
+                    <p>本应用不面向 13 岁以下的儿童。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+                    
+                    <h2 id="zh-7">7. 隐私政策变更</h2>
+                    <p>我们可能会不时更新本隐私政策。更新后的政策将在应用内或官方网站上公布。建议您定期查看本政策。</p>
+                    
+                    <h2 id="zh-8">8. 联系我们</h2>
+                    <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+                    
+                    <div class="contact-info">
+                        <p>📧 <strong>电子邮件：</strong><a href="mailto:support@drflo.org">support@drflo.org</a></p>
+                        <p>🌐 <strong>官方网站：</strong><a href="https://agrisale.drflo.org" target="_blank">https://agrisale.drflo.org</a></p>
+                        <p>💻 <strong>GitHub：</strong><a href="https://github.com/Flocio" target="_blank">https://github.com/Flocio</a></p>
+                    </div>
+                </div>
+                
+                <!-- English Version -->
+                <div id="en-content" class="lang-content">
+                    <div class="update-date">📅 Last Updated: January 23, 2026</div>
+                    
+                    <p>Welcome to <strong>Agrisale</strong> / <strong>AgrisaleWS</strong> (collectively referred to as "the App"). We take your privacy seriously. This Privacy Policy explains how we collect, use, store, and protect your information.</p>
+                    
+                    <!-- Table of Contents -->
+                    <div class="toc">
+                        <h3>📑 Table of Contents</h3>
+                        <ol>
+                            <li><a href="#en-1">Information Collection</a></li>
+                            <li><a href="#en-2">Use of Information</a></li>
+                            <li><a href="#en-3">Information Sharing</a></li>
+                            <li><a href="#en-4">Data Security</a></li>
+                            <li><a href="#en-5">Data Control</a></li>
+                            <li><a href="#en-6">Children's Privacy</a></li>
+                            <li><a href="#en-7">Changes to Privacy Policy</a></li>
+                            <li><a href="#en-8">Contact Us</a></li>
+                        </ol>
+                    </div>
+                    
+                    <!-- Version Differences -->
+                    <div class="version-note">
+                        <div class="version-card local">
+                            <h4>📦 Agrisale (Local Version)</h4>
+                            <ul>
+                                <li>All data stored <strong>completely locally</strong></li>
+                                <li>No connection to cloud servers</li>
+                                <li>Data never leaves your device</li>
+                            </ul>
+                        </div>
+                        <div class="version-card cloud">
+                            <h4>☁️ AgrisaleWS (Cloud Version)</h4>
+                            <ul>
+                                <li>Supports both local and cloud storage</li>
+                                <li>Cloud Workspace data syncs to server</li>
+                                <li>Local Workspace data stays on device</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h2 id="en-1">1. Information Collection</h2>
+                    
+                    <h3>1.1 Locally Stored Data</h3>
+                    <p>Business data in the App (including but not limited to products, customers, suppliers, purchases, sales, returns, payments, and remittances) is <strong>stored locally on your device</strong> by default.</p>
+                    <p>Locally stored data includes:</p>
+                    <ul>
+                        <li>User account information (username, password)</li>
+                        <li>Product inventory information</li>
+                        <li>Customer and supplier information</li>
+                        <li>Transaction records (purchases, sales, returns, payments, remittances)</li>
+                        <li>Report data</li>
+                        <li>App settings and preferences</li>
+                    </ul>
+                    
+                    <h3>1.2 Cloud Stored Data (AgrisaleWS Only)</h3>
+                    <p>If you use the Cloud Workspace feature in AgrisaleWS, the following data will be synchronized to cloud servers:</p>
+                    <ul>
+                        <li>All business data in Cloud Workspaces</li>
+                        <li>Team member information and permission settings</li>
+                        <li>Collaboration-related operation logs</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <strong>💡 Note:</strong> You can freely choose between Local Workspaces and Cloud Workspaces. Data in Local Workspaces is never uploaded to the cloud.
+                    </div>
+                    
+                    <h3>1.3 Network Request Data</h3>
+                    <p>The App may make network requests in the following situations:</p>
+                    
+                    <p><strong>a) Version Update Check</strong></p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Check if a new version of the App is available</li>
+                        <li><strong>Data:</strong> Only the current app version number is sent</li>
+                        <li><strong>Servers:</strong> App official website, GitHub</li>
+                    </ul>
+                    
+                    <p><strong>b) AI Data Analysis Feature (Optional)</strong></p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Provide intelligent data analysis services</li>
+                        <li><strong>Data:</strong> Query content and related business data you actively send to AI</li>
+                        <li><strong>Note:</strong> This feature requires you to configure your own API key. Data will be sent to the AI service provider you choose (such as OpenAI, DeepSeek, etc.)</li>
+                        <li><strong>Warning:</strong> Please do not include sensitive personal identity information in AI queries</li>
+                    </ul>
+                    
+                    <p><strong>c) Cloud Sync (AgrisaleWS Only)</strong></p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Enable multi-device data sync and team collaboration</li>
+                        <li><strong>Data:</strong> Business data in Cloud Workspaces</li>
+                        <li><strong>Servers:</strong> AgrisaleWS cloud servers</li>
+                    </ul>
+                    
+                    <h2 id="en-2">2. Use of Information</h2>
+                    <p>The information we collect is only used for:</p>
+                    <ul>
+                        <li>Providing core functionality services of the App</li>
+                        <li>Checking for app updates</li>
+                        <li>Improving app performance and user experience</li>
+                        <li>Enabling cloud data sync and team collaboration (AgrisaleWS only)</li>
+                    </ul>
+                    
+                    <h2 id="en-3">3. Information Sharing</h2>
+                    <p>We <strong>do not</strong> sell, trade, or otherwise transfer your personal information or business data to third parties, except:</p>
+                    <ul>
+                        <li>With your explicit consent</li>
+                        <li>As required by law</li>
+                        <li>When you choose to use third-party AI services, relevant query data will be sent to that service provider</li>
+                    </ul>
+                    
+                    <h2 id="en-4">4. Data Security</h2>
+                    <p>We take the following measures to protect your data:</p>
+                    <ul>
+                        <li>Local Workspace data is stored entirely on your device without network transmission</li>
+                        <li>User passwords are encrypted and stored locally</li>
+                        <li>Cloud data transmission uses HTTPS encryption</li>
+                        <li>Data backup and recovery features are supported</li>
+                    </ul>
+                    
+                    <h2 id="en-5">5. Data Control</h2>
+                    <p>You have complete control over your data:</p>
+                    <ul>
+                        <li><strong>View:</strong> You can view all data stored in the App at any time</li>
+                        <li><strong>Export:</strong> You can export data in CSV or PDF format</li>
+                        <li><strong>Backup:</strong> You can create data backups at any time</li>
+                        <li><strong>Delete:</strong> You can delete any data or uninstall the App to delete all local data</li>
+                        <li><strong>Cloud Data Deletion:</strong> You can delete Cloud Workspaces and all their data through the App</li>
+                    </ul>
+                    
+                    <h2 id="en-6">6. Children's Privacy</h2>
+                    <p>This App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+                    
+                    <h2 id="en-7">7. Changes to Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Updated policies will be posted within the App or on our official website. We recommend that you review this policy periodically.</p>
+                    
+                    <h2 id="en-8">8. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                    
+                    <div class="contact-info">
+                        <p>📧 <strong>Email:</strong> <a href="mailto:support@drflo.org">support@drflo.org</a></p>
+                        <p>🌐 <strong>Website:</strong> <a href="https://agrisale.drflo.org" target="_blank">https://agrisale.drflo.org</a></p>
+                        <p>💻 <strong>GitHub:</strong> <a href="https://github.com/Flocio" target="_blank">https://github.com/Flocio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+                <strong>Agrisale</strong> - 农资销售管理系统<br>
+                <a href="https://github.com/Flocio" target="_blank">GitHub</a> · 
+                <a href="https://agrisale.drflo.org" target="_blank">官方网站</a>
+            </p>
+            <p class="copyright">
+                © 2024-2026 drflo.org. All rights reserved.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            // 切换按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // 切换内容显示
+            document.querySelectorAll('.lang-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(lang + '-content').classList.add('active');
+        }
+    </script>
+</body>
+</html>
