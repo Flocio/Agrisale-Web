@@ -89,39 +89,47 @@
         
         .lang-switch {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
-            margin: 25px 0;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            align-items: center;
+            margin: 10px 0 30px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border: 1px solid rgba(123, 97, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+        
+        .lang-label {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            padding-right: 6px;
         }
         
         .lang-btn {
-            padding: 12px 35px;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            border-radius: 30px;
+            padding: 10px 28px;
+            border: 2px solid var(--primary-color);
+            border-radius: 26px;
             background: transparent;
-            color: white;
+            color: var(--primary-color);
             cursor: pointer;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: 600;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.2px;
+            transition: all 0.2s ease;
         }
         
         .lang-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-1px);
         }
         
         .lang-btn.active {
-            background: white;
-            color: var(--primary-color);
-            border-color: white;
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 6px 16px rgba(123, 97, 255, 0.25);
         }
         
         .lang-content {
@@ -223,16 +231,10 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <a href="/" class="back-link">← Back / 返回首页</a>
+            <a href="/" class="back-link">← 返回首页</a>
             <h1>隐私政策</h1>
             <p class="subtitle">Privacy Policy</p>
-            <p>了解我们如何保护您的数据安全 / Learn how we protect your data</p>
-            
-            <!-- 语言切换 - 放在顶部更显眼 -->
-            <div class="lang-switch">
-                <button class="lang-btn active" onclick="switchLang('zh')">中文 Chinese</button>
-                <button class="lang-btn" onclick="switchLang('en')">English 英文</button>
-            </div>
+            <p>了解我们如何保护您的数据安全</p>
             
             <nav class="nav">
                 <a href="/" class="nav-link">首页 Home</a>
@@ -245,6 +247,12 @@
         <!-- Content -->
         <div class="content">
             <div class="privacy-content">
+                <!-- 语言切换 -->
+                <div class="lang-switch">
+                    <span class="lang-label">语言 / Language</span>
+                    <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+                    <button class="lang-btn" onclick="switchLang('en')">English</button>
+                </div>
                 
                 <!-- 中文版 -->
                 <div id="zh-content" class="lang-content active">
