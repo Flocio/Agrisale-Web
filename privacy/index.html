@@ -37,6 +37,11 @@
     </script>
     <style>
         /* 隐私政策页面专用样式 */
+        :root {
+            --primary-color: #667eea;
+            --primary-dark: #764ba2;
+        }
+
         .privacy-content {
             max-width: 900px;
             margin: 0 auto;
@@ -89,32 +94,35 @@
         
         .lang-switch {
             display: flex;
-            gap: 10px;
+            gap: 15px;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .lang-btn {
-            padding: 5px 15px;
-            border: 1px solid var(--primary-color);
-            border-radius: 15px;
-            background: transparent;
-            color: var(--text-secondary);
+            padding: 8px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            background: white;
+            color: var(--primary-color);
             cursor: pointer;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 600;
             transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         
         .lang-btn:hover {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .lang-btn.active {
-            background: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
             color: white;
-            border-color: var(--primary-color);
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
         
         .lang-content {
