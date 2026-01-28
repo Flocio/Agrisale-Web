@@ -1,22 +1,22 @@
 {
-  "tag_name": "v1.8.1",
-  "body": "### v1.8.1 更新内容 🚀\n\n#### 🎨 UI 优化\n- **风格选择器布局调整**：改为垂直排列，避免窄屏幕下文字换行\n- **Windows 安装程序中文化**：安装向导界面支持简体中文\n\n#### 🐛 Bug 修复\n- 修复 CupertinoSwitch 参数兼容性问题",
+  "tag_name": "v1.8.2",
+  "body": "### v1.8.2 更新内容 🚀\n\n#### 🎨 UI 优化\n- **风格选择器布局调整**：改为垂直排列，避免窄屏幕下文字换行\n- **Windows 安装程序中文化**：安装向导界面支持简体中文\n\n#### 🐛 Bug 修复\n- 修复 CupertinoSwitch 参数兼容性问题",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v1.8.1.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.1/AgrisaleWS-android-v1.8.1.apk"
+      "name": "AgrisaleWS-android-v1.8.2.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.2/AgrisaleWS-android-v1.8.2.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v1.8.1.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.1/AgrisaleWS-ios-v1.8.1.ipa"
+      "name": "AgrisaleWS-ios-v1.8.2.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.2/AgrisaleWS-ios-v1.8.2.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v1.8.1.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.1/AgrisaleWS-macos-v1.8.1.dmg"
+      "name": "AgrisaleWS-macos-v1.8.2.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.2/AgrisaleWS-macos-v1.8.2.dmg"
     },
     {
-      "name": "AgrisaleWS-windows-v1.8.1-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.1/AgrisaleWS-windows-v1.8.1-installer.exe"
+      "name": "AgrisaleWS-windows-v1.8.2-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v1.8.2/AgrisaleWS-windows-v1.8.2-installer.exe"
     }
   ]
 }
