@@ -1,22 +1,22 @@
 {
-  "tag_name": "v3.3.3",
-  "body": "### v3.3.3 更新内容 🚀\n\n#### 🎨 UI 改进\n- **产品编辑对话框优化**：改进同时修改产品名称和供应商时的对话框提示信息\n- **SnackBar 提示信息优化**：根据实际修改情况显示更精确的成功提示\n\n#### 🐛 Bug 修复\n- **数据完整性修复**：修复删除/更新基础信息导致的相关问题\n- **产品名称同步**：修复产品名称修改后历史记录未同步的问题\n- **崩溃修复**：修复编辑已删除/已改名产品的记录时应用崩溃的问题\n\n#### ✨ 新功能\n- **库存统计日期筛选**：支持按日期范围筛选产品的采购、销售、退货记录\n- **级联操作日志记录**：完整记录所有级联操作的详细日志\n- **搜索功能增强**：支持搜索\"未知客户\"、\"未知供应商\"等关键词",
+  "tag_name": "v3.5.0",
+  "body": "### v3.5.0 更新内容 🚀\n\n#### ⚙️ 模型设置\n- **取消恢复默认按钮**：模型设置卡片中移除「恢复默认」按钮，界面更简洁\n\n#### 🎨 UI 优化\n- **退出登录过渡**：退出登录时改为向左翻页回到登录界面，更符合返回直觉\n\n#### 📁 帮助与数据路径\n- **数据存储路径**：在「使用帮助 → 系统设置」中显示当前系统的数据文件存储位置（macOS / Windows / Linux / Android），iOS 不显示",
   "assets": [
     {
-      "name": "Agrisale-android-v3.3.3.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.3.3/Agrisale-android-v3.3.3.apk"
+      "name": "Agrisale-android-v3.5.0.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-android-v3.5.0.apk"
     },
     {
-      "name": "Agrisale-ios-v3.3.3.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.3.3/Agrisale-ios-v3.3.3.ipa"
+      "name": "Agrisale-ios-v3.5.0.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-ios-v3.5.0.ipa"
     },
     {
-      "name": "Agrisale-macos-v3.3.3.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.3.3/Agrisale-macos-v3.3.3.dmg"
+      "name": "Agrisale-macos-v3.5.0.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-macos-v3.5.0.dmg"
     },
     {
-      "name": "Agrisale-windows-v3.3.3-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.3.3/Agrisale-windows-v3.3.3-installer.exe"
+      "name": "Agrisale-windows-v3.5.0-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-windows-v3.5.0-installer.exe"
     }
   ]
 }
