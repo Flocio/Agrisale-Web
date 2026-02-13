@@ -1,22 +1,22 @@
 {
-  "tag_name": "v3.5.0",
-  "body": "### v3.5.0 更新内容 🚀\n\n#### ⚙️ 模型设置\n- **取消恢复默认按钮**：模型设置卡片中移除「恢复默认」按钮，界面更简洁\n\n#### 🎨 UI 优化\n- **退出登录过渡**：退出登录时改为向左翻页回到登录界面，更符合返回直觉\n\n#### 📁 帮助与数据路径\n- **数据存储路径**：在「使用帮助 → 系统设置」中显示当前系统的数据文件存储位置（macOS / Windows / Linux / Android），iOS 不显示",
+  "tag_name": "v3.5.1",
+  "body": "### v3.5.1 更新内容 🚀\n\n#### 📄 版权标识\n- **页面版权角标**：为尚未显示版权角标的页面补上底部版权标识\n\n#### 🎨 进账与汇款界面 UI\n- **金额提示**：改为输入框上方蓝色提示卡片，占位与标题统一\n- **优惠金额/优惠前价格**：标签支持换行，错误时标题保持红色；优惠金额为负时实时提示\n- **汇款页**：「金额」改为「汇款金额」，提示与占位文案同步",
   "assets": [
     {
-      "name": "Agrisale-android-v3.5.0.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-android-v3.5.0.apk"
+      "name": "Agrisale-android-v3.5.1.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.1/Agrisale-android-v3.5.1.apk"
     },
     {
-      "name": "Agrisale-ios-v3.5.0.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-ios-v3.5.0.ipa"
+      "name": "Agrisale-ios-v3.5.1.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.1/Agrisale-ios-v3.5.1.ipa"
     },
     {
-      "name": "Agrisale-macos-v3.5.0.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-macos-v3.5.0.dmg"
+      "name": "Agrisale-macos-v3.5.1.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.1/Agrisale-macos-v3.5.1.dmg"
     },
     {
-      "name": "Agrisale-windows-v3.5.0-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.0/Agrisale-windows-v3.5.0-installer.exe"
+      "name": "Agrisale-windows-v3.5.1-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.1/Agrisale-windows-v3.5.1-installer.exe"
     }
   ]
 }
