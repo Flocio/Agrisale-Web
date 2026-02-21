@@ -1,22 +1,22 @@
 {
-  "tag_name": "v2.1.0",
-  "body": "### v2.1.0 更新内容 🚀\n\n#### 🐛 Bug 修复\n- **通知功能**：修复通知加载数量、UI 显示逻辑等问题\n- **数据覆盖功能**：修复数据导入和备份恢复相关 bug\n\n#### 🔔 通知与 UI\n- **覆盖通知标签**：增加覆盖通知标签\n- **版权角标**：修复漏掉版权角标的页面\n\n#### 🎨 UI 改进\n- **进账汇款界面**：进账、汇款界面 UI 改进\n- **界面加载优化**：优化列表加载逻辑，减少冗余请求，提升首屏加载速度",
+  "tag_name": "v2.2.0",
+  "body": "### v2.2.0 更新内容 🚀\n\n#### 🛡️ 稳定性与安全\n- **异常处理修复**：统一 except HTTPException: raise，避免业务异常被误转为 500\n- **CORS 漏洞修复**：修复 CORS 配置冲突与凭据场景下的兼容问题\n\n#### 🚀 加载与交互体验\n- **数据分析助手 UI**：输入框圆角与发送按钮视觉优化\n- **记录排序优化**：本地 Workspace 5 类记录改为按日期排序，最新在前\n- **通知修复**：修复单人云端 Workspace 仍显示通知的问题\n- **启动加载优化**：启动白屏改为展示软件图标\n\n#### 📋 数据展示与后台\n- **管理员后台日志增强**：操作显示中文化，补充筛选项\n- **移除弃用页面**：删除未使用的旧 screen 页面\n- **详情窗口修复**：9 个表详情统一显示完整字段",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v2.1.0.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.1.0/AgrisaleWS-android-v2.1.0.apk"
+      "name": "AgrisaleWS-android-v2.2.0.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-android-v2.2.0.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v2.1.0.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.1.0/AgrisaleWS-ios-v2.1.0.ipa"
+      "name": "AgrisaleWS-ios-v2.2.0.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-ios-v2.2.0.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v2.1.0.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.1.0/AgrisaleWS-macos-v2.1.0.dmg"
+      "name": "AgrisaleWS-macos-v2.2.0.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-macos-v2.2.0.dmg"
     },
     {
-      "name": "AgrisaleWS-windows-v2.1.0-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.1.0/AgrisaleWS-windows-v2.1.0-installer.exe"
+      "name": "AgrisaleWS-windows-v2.2.0-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-windows-v2.2.0-installer.exe"
     }
   ]
 }
