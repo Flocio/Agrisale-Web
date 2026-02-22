@@ -1,22 +1,22 @@
 {
-  "tag_name": "v3.5.2",
-  "body": "### v3.5.2 更新内容 🚀\n\n- 详情页面 UI 小修改\n- 将记录按顺序展示\n- 移动端开启显示图标",
+  "tag_name": "v3.5.3",
+  "body": "### v3.5.3 更新内容 🚀\n\n- **导出功能修复**：修复 Windows 下无法正常导出的问题\n- **路径分隔符适配**：Windows 路径分隔符正确适配\n- **非法字符鲁棒性**：对 Windows 非法文件名字符进行清洗，自动备份与导出文件名更稳健",
   "assets": [
     {
-      "name": "Agrisale-android-v3.5.2.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.2/Agrisale-android-v3.5.2.apk"
+      "name": "Agrisale-android-v3.5.3.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.3/Agrisale-android-v3.5.3.apk"
     },
     {
-      "name": "Agrisale-ios-v3.5.2.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.2/Agrisale-ios-v3.5.2.ipa"
+      "name": "Agrisale-ios-v3.5.3.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.3/Agrisale-ios-v3.5.3.ipa"
     },
     {
-      "name": "Agrisale-macos-v3.5.2.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.2/Agrisale-macos-v3.5.2.dmg"
+      "name": "Agrisale-macos-v3.5.3.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.3/Agrisale-macos-v3.5.3.dmg"
     },
     {
-      "name": "Agrisale-windows-v3.5.2-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.2/Agrisale-windows-v3.5.2-installer.exe"
+      "name": "Agrisale-windows-v3.5.3-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisale/v3.5.3/Agrisale-windows-v3.5.3-installer.exe"
     }
   ]
 }

@@ -1,22 +1,22 @@
 {
-  "tag_name": "v2.2.0",
-  "body": "### v2.2.0 更新内容 🚀\n\n#### 🛡️ 稳定性与安全\n- **异常处理修复**：统一 except HTTPException: raise，避免业务异常被误转为 500\n- **CORS 漏洞修复**：修复 CORS 配置冲突与凭据场景下的兼容问题\n\n#### 🚀 加载与交互体验\n- **数据分析助手 UI**：输入框圆角与发送按钮视觉优化\n- **记录排序优化**：本地 Workspace 5 类记录改为按日期排序，最新在前\n- **通知修复**：修复单人云端 Workspace 仍显示通知的问题\n- **启动加载优化**：启动白屏改为展示软件图标\n\n#### 📋 数据展示与后台\n- **管理员后台日志增强**：操作显示中文化，补充筛选项\n- **移除弃用页面**：删除未使用的旧 screen 页面\n- **详情窗口修复**：9 个表详情统一显示完整字段",
+  "tag_name": "v2.2.1",
+  "body": "### v2.2.1 更新内容 🚀\n\n- **导出功能修复**：修复 Windows 下无法正常导出的问题\n- **路径分隔符适配**：Windows 路径分隔符正确适配\n- **非法字符鲁棒性**：对 Windows 非法文件名字符进行清洗，自动备份与导出文件名更稳健",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v2.2.0.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-android-v2.2.0.apk"
+      "name": "AgrisaleWS-android-v2.2.1.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-android-v2.2.1.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v2.2.0.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-ios-v2.2.0.ipa"
+      "name": "AgrisaleWS-ios-v2.2.1.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-ios-v2.2.1.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v2.2.0.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-macos-v2.2.0.dmg"
+      "name": "AgrisaleWS-macos-v2.2.1.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-macos-v2.2.1.dmg"
     },
     {
-      "name": "AgrisaleWS-windows-v2.2.0-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.0/AgrisaleWS-windows-v2.2.0-installer.exe"
+      "name": "AgrisaleWS-windows-v2.2.1-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-windows-v2.2.1-installer.exe"
     }
   ]
 }
