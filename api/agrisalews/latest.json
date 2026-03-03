@@ -1,22 +1,22 @@
 {
-  "tag_name": "v2.2.1",
-  "body": "### v2.2.1 更新内容 🚀\n\n- **导出功能修复**：修复 Windows 下无法正常导出的问题\n- **路径分隔符适配**：Windows 路径分隔符正确适配\n- **非法字符鲁棒性**：对 Windows 非法文件名字符进行清洗，自动备份与导出文件名更稳健",
+  "tag_name": "v2.3.0",
+  "body": "### v2.3.0 更新内容 🚀\n\n- **金额显示问题解决**：统一金额精度与显示，避免浮点数导致的显示不一致\n- **支持根据具体总价填写单价**：采购/销售/退货界面新增「单价计算辅助」，可根据预计总价与数量反算单价并填入\n- **UI 改进**：表单错误提示可完整显示、错误状态悬停时保持红色边框与标签可见",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v2.2.1.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-android-v2.2.1.apk"
+      "name": "AgrisaleWS-android-v2.3.0.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.3.0/AgrisaleWS-android-v2.3.0.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v2.2.1.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-ios-v2.2.1.ipa"
+      "name": "AgrisaleWS-ios-v2.3.0.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.3.0/AgrisaleWS-ios-v2.3.0.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v2.2.1.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-macos-v2.2.1.dmg"
+      "name": "AgrisaleWS-macos-v2.3.0.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.3.0/AgrisaleWS-macos-v2.3.0.dmg"
     },
     {
-      "name": "AgrisaleWS-windows-v2.2.1-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.2.1/AgrisaleWS-windows-v2.2.1-installer.exe"
+      "name": "AgrisaleWS-windows-v2.3.0-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.3.0/AgrisaleWS-windows-v2.3.0-installer.exe"
     }
   ]
 }
