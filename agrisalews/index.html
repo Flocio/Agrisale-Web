@@ -104,6 +104,35 @@
                 </div>
             </div>
             
+            <!-- iOS OTA 无线安装 -->
+            <div class="section" style="background: #f8f4ff; border-radius: 12px; padding: 1.25rem;">
+                <h2>📱 iOS 无线安装（OTA）</h2>
+                <p class="section-intro">无法连电脑时，可在 iPhone 上直接用 Safari 安装，无需数据线。</p>
+                <ul style="margin: 0.75rem 0 1rem 1.25rem; color: #555;">
+                    <li>需使用 <strong>Ad Hoc</strong> 签名的 IPA，且该设备的 <strong>UDID</strong> 已加入描述文件。</li>
+                    <li>请用 <strong>Safari</strong> 打开下方链接（其他浏览器可能无法触发安装）。</li>
+                    <li>若当前在电脑上浏览，可将链接发到手机（邮件、备忘录、微信等），再在 iPhone 的 Safari 中打开。</li>
+                </ul>
+                <p style="margin: 1rem 0 0.5rem;"><strong>在 iPhone 的 Safari 中点击：</strong></p>
+                <p style="margin: 0 0 0.5rem;">
+                    <a id="ota-install-link" href="#" class="download-btn" style="display: inline-block; text-decoration: none;">打开并安装 AgrisaleWS</a>
+                </p>
+                <p style="margin: 0.5rem 0 0; font-size: 0.9rem; color: #666; word-break: break-all;" id="ota-install-url"></p>
+                <script>
+                  (function() {
+                    var pathname = window.location.pathname;
+                    var isGitHubPages = pathname.indexOf('/Agrisale-Web/') !== -1 || pathname.indexOf('/Agrisale-Web') === 0;
+                    var base = isGitHubPages ? (window.location.origin + '/Agrisale-Web') : window.location.origin;
+                    var manifestUrl = base + '/manifest/agrisalews/manifest.plist';
+                    var itmsUrl = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
+                    var link = document.getElementById('ota-install-link');
+                    var urlSpan = document.getElementById('ota-install-url');
+                    if (link) { link.href = itmsUrl; }
+                    if (urlSpan) { urlSpan.textContent = '链接：' + itmsUrl; }
+                  })();
+                </script>
+            </div>
+            
             <!-- 云端版特点 -->
             <div class="section">
                 <h2>✨ 云端版特点</h2>
