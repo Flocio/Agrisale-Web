@@ -1,22 +1,22 @@
 {
-  "tag_name": "v2.5.0",
-  "body": "### v2.5.0 更新内容 🚀\n\n- **软件关键问题修复**：修复认证、数据字段、导入/备份恢复等关键问题，提升整体稳定性\n- **UI 优化**：优化登录页、验证码弹窗、长列表和多处操作界面，使用更顺畅\n- **补全记录“修改时间”字段**：采购、销售、退货、进账、汇款等记录补全并保留 updated_at，便于详情展示、排序、导入和审计追溯\n- **智能排序功能**：实体支持中文拼音友好排序，业务记录支持按日期、创建时间、修改时间、序号排序\n- **本地备份文件可见**：Android 自动备份额外复制到 Documents/agrisalews，便于用户查看和取出\n- **新增库存历史最终页面**：产品详情新增库存轨迹，支持折线图、事件时间线、指定时间点库存查询和覆盖导入断点说明\n- **新增页面滚动条**：主要列表、报表和选择器增加滚动条或索引式滚动\n- **财务统计功能优化**：支持每日/每月视图、产品筛选、经营差额、现金差额、排序记忆、日历/月历定位和全分页统计\n- **通知图片预览和下载**：系统通知图片支持点击预览，并可下载保存\n- **系统架构优化**：新增邮箱认证、邮箱登录、绑定邮箱和找回密码能力",
+  "tag_name": "v2.6.0",
+  "body": "### v2.6.0 更新内容 🚀\n\n- **重大 Bug 修复**：修复库存联动、用户认证、账号校验、导出、自动备份、后台管理和通知设置相关问题，提升整体稳定性\n- **账号授权校验修复**：服务端统一校验账号激活、试用期、许可证和停用状态，授权失效后不能继续访问业务功能或刷新登录状态\n- **UI 更新**：优化登录、账户设置、Workspace 详情、统计报表、协议页面、帮助文档等多处界面细节\n- **新增贡献数据页面**：新增类似 GitHub 贡献图的贡献总览，展示贡献方格图、活动概览和贡献活动\n- **导出功能重大修复**：增强 CSV 字段转义和 PDF 多行字段解析，优化 iOS 导出临时文件处理和 macOS 保存体验\n- **后台管理功能修复**：增强用户/许可证状态生效、管理日志、日志筛选、Workspace 敏感操作保护展示等后台能力\n- **停用账号保护**：防止被管理员停用的账号自行重新激活，并避免许可证使用人数重复统计\n- **心跳状态提示修复**：区分设备数量超限和账号授权失效，避免授权失效时误显示设备数量超限\n- **敏感操作保护**：Workspace 默认开启敏感操作保护，防止误改产品库存、误导入数据或误恢复备份\n- **通知设置重大修复**：修复五种通知设置在账号切换、跨设备同步、列表高亮、上线/离线提示和轮询性能中的问题\n- **帮助文档搜索**：帮助文档页面支持搜索定位匹配内容，并新增原生滚动条\n- **自动备份重大修复**：备份写入更稳健，降低异常中断造成损坏文件或混合时刻备份的风险\n- **新增 Workspace 派生功能**：可从已有 Workspace 派生新 Workspace，复制产品、客户、供应商、员工基础资料，业务记录保持空白",
   "assets": [
     {
-      "name": "AgrisaleWS-android-v2.5.0.apk",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-android-v2.5.0.apk"
+      "name": "AgrisaleWS-android-v2.6.0.apk",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-android-v2.6.0.apk"
     },
     {
-      "name": "AgrisaleWS-ios-v2.5.0.ipa",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-ios-v2.5.0.ipa"
+      "name": "AgrisaleWS-ios-v2.6.0.ipa",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-ios-v2.6.0.ipa"
     },
     {
-      "name": "AgrisaleWS-macos-v2.5.0.dmg",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-macos-v2.5.0.dmg"
+      "name": "AgrisaleWS-macos-v2.6.0.dmg",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-macos-v2.6.0.dmg"
     },
     {
-      "name": "AgrisaleWS-windows-v2.5.0-installer.exe",
-      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-windows-v2.5.0-installer.exe"
+      "name": "AgrisaleWS-windows-v2.6.0-installer.exe",
+      "browser_download_url": "https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-windows-v2.6.0-installer.exe"
     }
   ]
 }

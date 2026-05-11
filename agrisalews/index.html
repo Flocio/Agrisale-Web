@@ -44,7 +44,7 @@
             <h1>☁️ AgrisaleWS</h1>
             <p class="subtitle">云端版农资销售管理系统</p>
             <p>支持团队协作、多设备同步、AI 智能分析</p>
-            <div class="version-badge">当前版本: v2.5.0</div>
+            <div class="version-badge">当前版本: v2.6.0</div>
             
             <nav class="nav">
                 <a href="/" class="nav-link">首页 Home</a>
@@ -69,7 +69,7 @@
                         </div>
                         <h3>Android</h3>
                         <div class="file-info">APK 安装包</div>
-                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-android-v2.5.0.apk" class="download-btn">下载 APK</a>
+                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-android-v2.6.0.apk" class="download-btn">下载 APK</a>
                     </div>
                     
                     <!-- iOS -->
@@ -79,7 +79,7 @@
                         </div>
                         <h3>iOS</h3>
                         <div class="file-info">IPA 安装包</div>
-                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-ios-v2.5.0.ipa" class="download-btn">下载 IPA</a>
+                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-ios-v2.6.0.ipa" class="download-btn">下载 IPA</a>
                     </div>
                     
                     <!-- macOS -->
@@ -89,7 +89,7 @@
                         </div>
                         <h3>macOS</h3>
                         <div class="file-info">DMG 镜像</div>
-                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-macos-v2.5.0.dmg" class="download-btn">下载 DMG</a>
+                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-macos-v2.6.0.dmg" class="download-btn">下载 DMG</a>
                     </div>
                     
                     <!-- Windows -->
@@ -99,7 +99,7 @@
                         </div>
                         <h3>Windows</h3>
                         <div class="file-info">安装程序</div>
-                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.5.0/AgrisaleWS-windows-v2.5.0-installer.exe" class="download-btn">下载 EXE</a>
+                        <a href="https://1819203311.v.123pan.cn/1819203311/releases/agrisalews/v2.6.0/AgrisaleWS-windows-v2.6.0-installer.exe" class="download-btn">下载 EXE</a>
                     </div>
                 </div>
             </div>
@@ -150,19 +150,22 @@
             
             <!-- 更新说明 -->
             <div class="section">
-                <h2>📋 v2.5.0 更新内容</h2>
+                <h2>📋 v2.6.0 更新内容</h2>
                 <div class="update-notes">
                     <ul>
-                        <li><strong>软件关键问题修复</strong>：修复认证、数据字段、导入/备份恢复等关键问题，提升整体稳定性</li>
-                        <li><strong>UI 优化</strong>：优化登录页、验证码弹窗、长列表和多处操作界面，使用更顺畅</li>
-                        <li><strong>补全记录“修改时间”字段</strong>：采购、销售、退货、进账、汇款等记录补全并保留 updated_at，便于详情展示、排序、导入和审计追溯</li>
-                        <li><strong>智能排序功能</strong>：实体支持中文拼音友好排序，业务记录支持按日期、创建时间、修改时间、序号排序</li>
-                        <li><strong>本地备份文件可见</strong>：Android 自动备份额外复制到 Documents/agrisalews，便于用户查看和取出</li>
-                        <li><strong>新增库存历史最终页面</strong>：产品详情新增库存轨迹，支持折线图、事件时间线、指定时间点库存查询和覆盖导入断点说明</li>
-                        <li><strong>新增页面滚动条</strong>：主要列表、报表和选择器增加滚动条或索引式滚动</li>
-                        <li><strong>财务统计功能优化</strong>：支持每日/每月视图、产品筛选、经营差额、现金差额、排序记忆、日历/月历定位和全分页统计</li>
-                        <li><strong>通知图片预览和下载</strong>：系统通知图片支持点击预览，并可下载保存</li>
-                        <li><strong>系统架构优化</strong>：新增邮箱认证、邮箱登录、绑定邮箱和找回密码能力</li>
+                        <li><strong>重大 Bug 修复</strong>：修复库存联动、用户认证、账号校验、导出、自动备份、后台管理和通知设置相关问题，提升整体稳定性</li>
+                        <li><strong>账号授权校验修复</strong>：服务端统一校验账号激活、试用期、许可证和停用状态，授权失效后不能继续访问业务功能或刷新登录状态</li>
+                        <li><strong>UI 更新</strong>：优化登录、账户设置、Workspace 详情、统计报表、协议页面、帮助文档等多处界面细节</li>
+                        <li><strong>新增贡献数据页面</strong>：新增类似 GitHub 贡献图的贡献总览，展示贡献方格图、活动概览和贡献活动</li>
+                        <li><strong>导出功能重大修复</strong>：增强 CSV 字段转义和 PDF 多行字段解析，优化 iOS 导出临时文件处理和 macOS 保存体验</li>
+                        <li><strong>后台管理功能修复</strong>：增强用户/许可证状态生效、管理日志、日志筛选、Workspace 敏感操作保护展示等后台能力</li>
+                        <li><strong>停用账号保护</strong>：防止被管理员停用的账号自行重新激活，并避免许可证使用人数重复统计</li>
+                        <li><strong>心跳状态提示修复</strong>：区分设备数量超限和账号授权失效，避免授权失效时误显示设备数量超限</li>
+                        <li><strong>敏感操作保护</strong>：Workspace 默认开启敏感操作保护，防止误改产品库存、误导入数据或误恢复备份</li>
+                        <li><strong>通知设置重大修复</strong>：修复五种通知设置在账号切换、跨设备同步、列表高亮、上线/离线提示和轮询性能中的问题</li>
+                        <li><strong>帮助文档搜索</strong>：帮助文档页面支持搜索定位匹配内容，并新增原生滚动条</li>
+                        <li><strong>自动备份重大修复</strong>：备份写入更稳健，降低异常中断造成损坏文件或混合时刻备份的风险</li>
+                        <li><strong>新增 Workspace 派生功能</strong>：可从已有 Workspace 派生新 Workspace，复制产品、客户、供应商、员工基础资料，业务记录保持空白</li>
                     </ul>
                 </div>
             </div>
